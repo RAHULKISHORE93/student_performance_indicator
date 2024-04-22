@@ -1,4 +1,4 @@
-from setup.tools import find_packages,setup
+from setuptools import find_packages,setup
 from typing import List
 
 HYPEN_E_DOT = '-e .'
@@ -18,11 +18,10 @@ setup(
     name = 'student_performance_indicator', 
     version = '0.0.1',
     author = 'Rahul',
-    author_email = 'rahulkishore93@gmail.com'
-    
-    
-
-)        
+    author_email = 'rahulkishore93@gmail.com',
+    packeges = find_packages(),
+    install_requires = get_requirements('requirements.txt')
+)     
 
 
 
